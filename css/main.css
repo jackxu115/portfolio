@@ -2,6 +2,31 @@ body {
     background-color: black;
 }
 
+.background {
+    overflow: hidden;
+}
+
+.slidingBackground {
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: 0;
+    background: url("../png/galaxy1.jpg") repeat-x;
+    height: 100%;
+    width: 2250px;
+    animation: slide 60s linear infinite;
+}
+
+@keyframes slide {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(-750px,0,0);
+    }
+}
+
 h1 {
     color: white;
     font-family: monospace;
