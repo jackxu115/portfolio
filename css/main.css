@@ -25,6 +25,10 @@ li {
     text-align: center;
     width: 400px;
     margin: auto;
+    position: absolute;
+    top: 30%;
+    left: 0;
+    right: 0;
 }
 
 #name {
@@ -32,7 +36,6 @@ li {
     margin-top: 20px;
     margin-bottom: 0;
     font-style: italic;
-
 }
 
 #intro {
@@ -65,7 +68,14 @@ li {
     width: 65%;
     margin-left: 50px;
 }
+
+.about img {
+    height: 150px;
+    width: 150px;
+    margin-left: 50px;
+}
 .skills {
+    margin-left: 250px;
 }
 
 .row2 {
@@ -77,8 +87,83 @@ li {
     margin-left: 50px;
 }
 
-.contacts {
-
+h2 {
+    color: white;
+    font-family: monospace;
+    font-size: 12px;
+    padding-top: 5px;
 }
+
+.card img {
+    height: 30px;
+    width: 30px;
+}
+
+.card:hover {
+    transform: scale(1.2);
+}
+
+.card {
+    padding: 0;
+    height: 65px;
+    width: 65px;
+    background-color: rgba(26, 24, 24, 1);
+    text-align: center;
+    border-radius: 10px;
+}
+
+.column {
+    float: left;
+    padding: 0;
+    width: 30%;
+}
+
+h3 {
+    color: white;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+}
+
+.projectsList {
+    display: flex;
+}
+
+a {
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+    font-family: monospace;
+    font-weight: bold;
+}
+
+.contactList img {
+    height: 40px;
+    width: 40px;
+}
+
+.contactList {
+    display: flex;
+}
+
+.projectsList img {
+    height: 120px;
+}
+
+.project {
+    width: 130px;
+    margin-left: 30px;
+}
+
+.contactCard {
+    padding-top: 10px;
+}
+
+.contactCard span {
+    font-size: 15px;
+}
+
+
 
 
