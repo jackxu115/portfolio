@@ -1,0 +1,84 @@
+body {
+    background-color: black;
+}
+
+h1 {
+    color: white;
+    font-family: monospace;
+    font-weight: bold;
+}
+
+span {
+    color: white;
+    font-family: monospace;
+    font-weight: bold;
+}
+
+li {
+    color: white;
+    font-family: monospace;
+    font-weight: bold;
+    list-style: none;
+}
+
+.name {
+    text-align: center;
+    width: 400px;
+    margin: auto;
+}
+
+#name {
+    font-size: 100px;
+    margin-top: 20px;
+    margin-bottom: 0;
+    font-style: italic;
+
+}
+
+#intro {
+    font-size: 35px;
+    margin-top: 0;
+    color: rgba(238, 186, 54, 0.8);
+    animation: fadeIn ease-in-out 8s infinite;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 100%;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.row1 {
+    display: flex;
+    margin-top: 40px;
+}
+
+.about {
+    width: 65%;
+    margin-left: 50px;
+}
+.skills {
+}
+
+.row2 {
+    display: flex;
+}
+
+.projects {
+    width: 65%;
+    margin-left: 50px;
+}
+
+.contacts {
+
+}
+
+
