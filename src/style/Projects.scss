@@ -1,0 +1,15 @@
+.Projects {
+  &_Section {
+    &_List {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      h3 {
+        color: #ffffff;
+        font-size: 60px;
+        font-weight: 600;
+      }
+    }
+  }
+}

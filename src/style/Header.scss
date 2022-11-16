@@ -1,0 +1,47 @@
+.Header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px;
+  background-color: #ffffff;
+  position: fixed;
+  width: 100vw;
+  z-index: 2;
+
+  &_Logo {
+    margin-left: 30px;
+    width: 50%;
+
+    img {
+      width: 50px;
+      border-radius: 50%;
+    }
+  }
+
+  &_Navbar {
+    display: flex;
+    flex-direction: row;
+    font-size: 25px;
+    justify-content: space-around;
+    width: 50%;
+
+    &_Home, &_About, &_Skills, &_Projects {
+      padding: 2px;
+      &:hover {
+        cursor: pointer;
+        background-color: #03e8f4;
+        border-radius: 5px;
+
+        box-shadow: 0 0 5px #03e8f4, 0 0 25px #03e8f4, 0 0 50px #03e8f4, 0 0 200px #03e8f4;
+      }
+      a {
+        text-decoration: none;
+        color: #000000;
+        &:hover {
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}

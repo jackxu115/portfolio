@@ -1,0 +1,44 @@
+.Header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px;
+  background-color: #ffffff;
+  position: fixed;
+  width: 100vw;
+  z-index: 2;
+}
+.Header_Logo {
+  margin-left: 30px;
+  width: 50%;
+}
+.Header_Logo img {
+  width: 50px;
+  border-radius: 50%;
+}
+.Header_Navbar {
+  display: flex;
+  flex-direction: row;
+  font-size: 25px;
+  justify-content: space-around;
+  width: 50%;
+}
+.Header_Navbar_Home, .Header_Navbar_About, .Header_Navbar_Skills, .Header_Navbar_Projects {
+  padding: 2px;
+}
+.Header_Navbar_Home:hover, .Header_Navbar_About:hover, .Header_Navbar_Skills:hover, .Header_Navbar_Projects:hover {
+  cursor: pointer;
+  background-color: #03e8f4;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #03e8f4, 0 0 25px #03e8f4, 0 0 50px #03e8f4, 0 0 200px #03e8f4;
+}
+.Header_Navbar_Home a, .Header_Navbar_About a, .Header_Navbar_Skills a, .Header_Navbar_Projects a {
+  text-decoration: none;
+  color: #000000;
+}
+.Header_Navbar_Home a:hover, .Header_Navbar_About a:hover, .Header_Navbar_Skills a:hover, .Header_Navbar_Projects a:hover {
+  color: #ffffff;
+}
+
+/*# sourceMappingURL=Header.css.map */

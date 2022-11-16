@@ -1,0 +1,61 @@
+.Home {
+  //position: relative;
+  max-width: 100vw;
+  width: 100vw;
+  color: #ffffff;
+  height: 600px;
+
+  //&_Section {
+    &_Name {
+      font-size: 100px;
+      position: absolute;
+      font-weight: 600;
+      top: 40%;
+      left: 50%;
+      transform: translateX(-50%);
+      animation: slideName 3s linear;
+      width: 400px;
+      text-align: center;
+    }
+
+    &_Title {
+      font-size: 60px;
+      position: absolute;
+      top: 60%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 700px;
+      animation: slideTitle 7.5s linear;
+      text-align: center;
+    }
+  //}
+}
+
+@keyframes slideName {
+  0% {
+    left: 100%;
+    opacity: 0;
+  }
+  100% {
+    left: 50%;
+    opacity: 1;
+  }
+}
+
+@keyframes slideTitle {
+  0% {
+    left: 150%;
+    opacity: 0;
+  }
+  50% {
+    left: 150%;
+    opacity: 0;
+  }
+  100% {
+    left: 50%;
+    opacity: 1;
+  }
+}
+
+
+
