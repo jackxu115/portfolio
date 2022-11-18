@@ -1,5 +1,6 @@
 import {useEffect} from "react";
 import "../style/Skills.scss"
+import {Background} from "./Background";
 
 export const Skills = () => {
 
@@ -25,13 +26,12 @@ export const Skills = () => {
         wordSphere(canvas, texts, counts, options);
     }, [])
 
-
     function wordSphere(canvas, texts, counts, options) {
         const π = Math.PI; // happy math!
         const {
-            width = 500,
-            height = 500,
-            radius = 150,
+            width = 400,
+            height = 400,
+            radius = 125,
             padding = 50,
             fontSize = 22,
             tilt = 0,
@@ -149,9 +149,7 @@ export const Skills = () => {
 
     return (
         <div className="Skills">
-            <section id="skills" className="Skills_Section">
-                <canvas id="canvas"></canvas>
-            </section>
+            <canvas id="canvas"></canvas>
         </div>
     )
 }

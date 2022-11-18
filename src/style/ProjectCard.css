@@ -1,0 +1,72 @@
+.ProjectCard {
+  width: 350px;
+  height: 200px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 20px;
+  color: #ffffff;
+  border-radius: 10px;
+}
+.ProjectCard_Info {
+  display: none;
+  width: 350px;
+  height: 200px;
+  background-color: rgba(0, 0, 0, 0.85);
+  animation: display 2s;
+  border-radius: 10px;
+}
+.ProjectCard_Info h4 {
+  color: #ffffff;
+  font-size: 22px;
+  padding: 10px;
+}
+.ProjectCard_Info_IconList {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+}
+.ProjectCard_Info_IconList_Link {
+  text-decoration: none;
+  color: #ffffff;
+}
+.ProjectCard_Info_IconList_Link_Icon {
+  margin: 5px;
+  transition: ease-in-out 0.3s;
+}
+.ProjectCard_Info_IconList_Link_Icon:hover {
+  transform: scale(1.3);
+  transition: ease-in-out 0.3s;
+  color: #00B7FF;
+}
+.ProjectCard_Info_SkillList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.ProjectCard_Info_SkillList_Skill {
+  margin: 5px;
+  background-color: #03e8f4;
+  padding: 2px;
+  border-radius: 2px;
+  font-size: 15px;
+  padding: 2px 5px;
+}
+
+@keyframes display {
+  0% {
+    opacity: 0;
+    scale: 0;
+    margin: -75px 0;
+  }
+  100% {
+    opacity: 1;
+    scale: 1;
+    margin: 0;
+  }
+}
+
+/*# sourceMappingURL=ProjectCard.css.map */

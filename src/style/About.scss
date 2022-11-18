@@ -1,25 +1,40 @@
 .About {
   color: #ffffff;
   width: 100vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
   height: 600px;
-  //&_Section {
-  h3, p {
-    margin-top: 20px;
-  }
-  h3 {
-    font-weight: 600;
-    font-size: 60px;
-    text-align: center;
-  }
+  position: relative;
 
-  p {
-    font-size: 30px;
-    width: 1000px;
-  }
 
-  //}
+  &_Section {
+    scroll-margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+
+    span{
+      color: #d22030;
+
+    }
+
+    h3 {
+      font-weight: 600;
+      font-size: 40px;
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    p {
+      font-size: 20px;
+      margin-top: 60px;
+    }
+
+    &_Intro {
+      width: 450px;
+    }
+
+    &_MySkills {
+      width: 450px;
+    }
+  }
 }

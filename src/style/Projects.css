@@ -1,13 +1,26 @@
-.Projects_Section_List {
+.Projects {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  position: relative;
 }
-.Projects_Section_List h3 {
+.Projects_Section {
+  scroll-margin-top: 100px;
+}
+.Projects_Section h3 {
   color: #ffffff;
   font-size: 60px;
   font-weight: 600;
+}
+.Projects_Section_List {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 1200px;
+  justify-content: center;
+  align-items: center;
 }
 
 /*# sourceMappingURL=Projects.css.map */

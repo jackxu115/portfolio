@@ -8,6 +8,7 @@
   position: fixed;
   width: 100vw;
   z-index: 2;
+  height: 80px;
 }
 .Header_Logo {
   margin-left: 30px;

@@ -1,23 +1,34 @@
 .About {
   color: #ffffff;
   width: 100vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
   height: 600px;
+  position: relative;
 }
-.About h3, .About p {
-  margin-top: 20px;
+.About_Section {
+  scroll-margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
 }
-.About h3 {
+.About_Section span {
+  color: #d22030;
+}
+.About_Section h3 {
   font-weight: 600;
-  font-size: 60px;
+  font-size: 40px;
   text-align: center;
+  margin-top: 40px;
 }
-.About p {
-  font-size: 30px;
-  width: 1000px;
+.About_Section p {
+  font-size: 20px;
+  margin-top: 60px;
+}
+.About_Section_Intro {
+  width: 450px;
+}
+.About_Section_MySkills {
+  width: 450px;
 }
 
 /*# sourceMappingURL=About.css.map */
