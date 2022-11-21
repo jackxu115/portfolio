@@ -149,12 +149,19 @@
       padding: 10px 10px;
       top: 0;
       opacity: 0;
+      a {
+        width: 40px;
+        img {
+          width: 40px;
+        }
+      }
 
 
       &_Close {
         position: absolute;
         right: 5%;
         top: 2%;
+        font-size: 35px
       }
 
       &_Logo {
@@ -163,20 +170,25 @@
 
         a {
           img {
-            width: 30px;
+            width: 50px;
             border-radius: 50%;
           }
         }
       }
 
       &_Home, &_About, &_Projects {
+        border-bottom: 1px solid #9c9c9c;
+        width: 100vw;
+      }
+
+      &_Home, &_About, &_Projects, a {
         padding: 20px 2px;
         color: #000000;
 
         a {
           text-decoration: none;
           color: #000000;
-
+          font-size: 25px;
           &:hover {
             color: #000000;
           }

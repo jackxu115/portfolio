@@ -130,28 +130,40 @@
     top: 0;
     opacity: 0;
   }
+  .Header_NavbarRD a {
+    width: 40px;
+  }
+  .Header_NavbarRD a img {
+    width: 40px;
+  }
   .Header_NavbarRD_Close {
     position: absolute;
     right: 5%;
     top: 2%;
+    font-size: 35px;
   }
   .Header_NavbarRD_Logo {
     padding: 0 2px 20px;
     margin: 0;
   }
   .Header_NavbarRD_Logo a img {
-    width: 30px;
+    width: 50px;
     border-radius: 50%;
   }
   .Header_NavbarRD_Home, .Header_NavbarRD_About, .Header_NavbarRD_Projects {
+    border-bottom: 1px solid #9c9c9c;
+    width: 100vw;
+  }
+  .Header_NavbarRD_Home, .Header_NavbarRD_About, .Header_NavbarRD_Projects, .Header_NavbarRD a {
     padding: 20px 2px;
     color: #000000;
   }
-  .Header_NavbarRD_Home a, .Header_NavbarRD_About a, .Header_NavbarRD_Projects a {
+  .Header_NavbarRD_Home a, .Header_NavbarRD_About a, .Header_NavbarRD_Projects a, .Header_NavbarRD a a {
     text-decoration: none;
     color: #000000;
+    font-size: 25px;
   }
-  .Header_NavbarRD_Home a:hover, .Header_NavbarRD_About a:hover, .Header_NavbarRD_Projects a:hover {
+  .Header_NavbarRD_Home a:hover, .Header_NavbarRD_About a:hover, .Header_NavbarRD_Projects a:hover, .Header_NavbarRD a a:hover {
     color: #000000;
   }
 }

@@ -2,6 +2,9 @@ import "../style/Header.scss"
 import logo from "../media/Logo.jpg"
 import MenuIcon from '@mui/icons-material/Menu';
 import {useRef, useState} from "react";
+import EmailIcon from "../media/icons8-gmail-logo-96.png";
+import GitHubIcon from "../media/icons8-github-96.png";
+import LinkedInIcon from "../media/icons8-linkedin-96.png";
 
 export const Header = () => {
 
@@ -39,6 +42,21 @@ export const Header = () => {
                     navbarRD.current.classList.remove('show')
                 }}>X
                 </div>
+                <a href="mailto:pengxu19890115@gmail.com" onClick={() => {
+                    navbarRD.current.classList.remove('show')
+                }}>
+                    <img src={EmailIcon} alt="Email" className="Header_NavbarRD_Icon"/>
+                </a>
+                <a href="https://github.com/jackxu115" onClick={() => {
+                    navbarRD.current.classList.remove('show')
+                }}>
+                    <img src={GitHubIcon} alt="GitHub" className="Header_NavbarRD_Icon"/>
+                </a>
+                <a href="" onClick={() => {
+                    navbarRD.current.classList.remove('show')
+                }}>
+                    <img src={LinkedInIcon} alt="LinkedIn" className="Header_NavbarRD_Icon"/>
+                </a>
             </div>
         </div>
     )
