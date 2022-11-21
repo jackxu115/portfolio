@@ -44,6 +44,19 @@
   animation: slideTitle 4s linear, textclip 6s linear infinite;
 }
 
+@media only screen and (max-width: 390px) {
+  .Home {
+    height: 850px;
+  }
+  .Home_Name {
+    font-size: 50px;
+    width: 250px;
+  }
+  .Home_Title {
+    font-size: 20px;
+    width: 250px;
+  }
+}
 @keyframes slideName {
   0% {
     left: 100%;

@@ -31,4 +31,27 @@
   width: 450px;
 }
 
+@media only screen and (max-width: 390px) {
+  .About {
+    height: 1200px;
+  }
+  .About_Section {
+    flex-direction: column;
+    align-items: center;
+  }
+  .About_Section h3 {
+    font-size: 40px;
+  }
+  .About_Section p {
+    font-size: 20px;
+    margin-top: 30px;
+  }
+  .About_Section_Intro {
+    width: 340px;
+  }
+  .About_Section_MySkills {
+    width: 340px;
+  }
+}
+
 /*# sourceMappingURL=About.css.map */

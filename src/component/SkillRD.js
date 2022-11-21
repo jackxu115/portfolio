@@ -1,8 +1,7 @@
 import {useEffect} from "react";
-import "../style/Skills.scss"
 import {Background} from "./Background";
 
-export const Skills = () => {
+export const SkillsRD = () => {
 
     let dx, dy
 
@@ -28,12 +27,12 @@ export const Skills = () => {
 
     function wordSphere(canvas, texts, counts, options) {
         const π = Math.PI; // happy math!
-        let {
-            width = 400,
-            height = 400,
-            radius = 125,
+        const {
+            width = 320,
+            height = 320,
+            radius = 100,
             padding = 50,
-            fontSize = 22,
+            fontSize = 16,
             tilt = 0,
             initialVelocityX = 0,
             initialVelocityY = 0,

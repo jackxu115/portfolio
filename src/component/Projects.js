@@ -15,7 +15,6 @@ export const Projects = () => {
                     {projectList.map((project, index) => <ProjectCard key={index} project={project}/>)}
                 </div>
             </section>
-            {/*<Background/>*/}
         </div>
     )
 }

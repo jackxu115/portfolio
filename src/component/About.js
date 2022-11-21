@@ -1,6 +1,7 @@
 import "../style/About.scss"
 import {Background} from "./Background";
 import {Skills} from "./Skills";
+import {SkillsRD} from "./SkillRD";
 
 export const About = () => {
     return (
@@ -20,7 +21,7 @@ export const About = () => {
                 </div>
                 <div className="About_Section_MySkills">
                     <h3>My <span>Skills</span></h3>
-                    <Skills/>
+                    {window.innerWidth <= 390 ? <SkillsRD/> : <Skills/>}
                 </div>
             </section>
             <Background/>

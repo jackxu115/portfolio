@@ -27,6 +27,11 @@
     }
   }
 
+  &_NavbarRD {
+    opacity: 0;
+    display: none;
+  }
+
   &_Navbar {
     display: flex;
     flex-direction: row;
@@ -34,53 +39,57 @@
     justify-content: space-around;
     width: 50%;
 
+    &_Menu {
+      visibility: hidden;
+    }
+
     &_Home, &_About, &_Skills, &_Projects {
       position: relative;
       padding: 5px;
 
       &:before {
         transition: all 0.4s;
-        position:absolute;
-        content:"";
-        width:100%;
-        height:50%;
-        left:50%;
-        margin-left:-50%;
-        top:25%;
-        border-color:rgba(22,22,75,0);
-        border-style:solid;
-        border-width:0 1px;
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 50%;
+        left: 50%;
+        margin-left: -50%;
+        top: 25%;
+        border-color: rgba(22, 22, 75, 0);
+        border-style: solid;
+        border-width: 0 1px;
         z-index: -1;
       }
 
       &:after {
         transition: all 0.4s;
-        position:absolute;
-        content:"";
-        width:50%;
-        height:100%;
-        left:50%;
-        margin-left:-25%;
-        top:0;
-        border-color:rgba(22,22,75,0);
-        border-style:solid;
-        border-width:1px 0;
+        position: absolute;
+        content: "";
+        width: 50%;
+        height: 100%;
+        left: 50%;
+        margin-left: -25%;
+        top: 0;
+        border-color: rgba(22, 22, 75, 0);
+        border-style: solid;
+        border-width: 1px 0;
         z-index: -1;
       }
 
       &:hover {
         cursor: pointer;
         padding: 5px;
-        &:before {
-          top:0%;
-          border-color:rgba(255,255,255,1);
-          height: 100%;
 
+        &:before {
+          top: 0%;
+          border-color: rgba(255, 255, 255, 1);
+          height: 100%;
         }
 
         &:after {
-          margin-left:-50%;
-          border-color:rgba(255,255,255,1);
+          margin-left: -50%;
+          border-color: rgba(255, 255, 255, 1);
           width: 100%;
         }
       }
@@ -96,3 +105,84 @@
     }
   }
 }
+
+@media only screen and (max-width: 390px) {
+  .Header {
+    &_Logo {
+      margin: 0;
+      width: 50%;
+
+      img {
+        width: 40px;
+        border-radius: 50%;
+        transition: ease-in-out 0.3s;
+      }
+    }
+
+    &_Navbar {
+      justify-content: flex-end;
+
+      &_Home, &_About, &_Projects {
+        display: none;
+      }
+
+      &_Menu {
+        display: flex;
+        color: #ffffff;
+        visibility: visible;
+      }
+    }
+    &_NavbarRD.show {
+      opacity: 1;
+      left: 0;
+    }
+
+    &_NavbarRD {
+      position: absolute;
+      left: -100%;
+      width: 100vw;
+      height: 100vh;
+      background-color: #FFFFFF;
+      transition: all 0.3s linear;
+      display: flex;
+      flex-direction: column;
+      padding: 10px 10px;
+      top: 0;
+      opacity: 0;
+
+
+      &_Close {
+        position: absolute;
+        right: 5%;
+        top: 2%;
+      }
+
+      &_Logo {
+        padding: 0 2px 20px;
+        margin: 0;
+
+        a {
+          img {
+            width: 30px;
+            border-radius: 50%;
+          }
+        }
+      }
+
+      &_Home, &_About, &_Projects {
+        padding: 20px 2px;
+        color: #000000;
+
+        a {
+          text-decoration: none;
+          color: #000000;
+
+          &:hover {
+            color: #000000;
+          }
+        }
+      }
+    }
+  }
+}
+

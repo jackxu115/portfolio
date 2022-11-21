@@ -30,9 +30,15 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 1200px;
+  max-width: 1200px;
   justify-content: center;
   align-items: center;
+}
+
+@media only screen and (max-width: 390px) {
+  .Projects_Section h3 {
+    font-size: 65px;
+  }
 }
 
 /*# sourceMappingURL=Projects.css.map */

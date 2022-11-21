@@ -24,12 +24,19 @@
   cursor: pointer;
   transition: ease-in-out 0.3s;
 }
+.Header_NavbarRD {
+  opacity: 0;
+  display: none;
+}
 .Header_Navbar {
   display: flex;
   flex-direction: row;
   font-size: 25px;
   justify-content: space-around;
   width: 50%;
+}
+.Header_Navbar_Menu {
+  visibility: hidden;
 }
 .Header_Navbar_Home, .Header_Navbar_About, .Header_Navbar_Skills, .Header_Navbar_Projects {
   position: relative;
@@ -83,6 +90,70 @@
 }
 .Header_Navbar_Home a:hover, .Header_Navbar_About a:hover, .Header_Navbar_Skills a:hover, .Header_Navbar_Projects a:hover {
   color: #ffffff;
+}
+
+@media only screen and (max-width: 390px) {
+  .Header_Logo {
+    margin: 0;
+    width: 50%;
+  }
+  .Header_Logo img {
+    width: 40px;
+    border-radius: 50%;
+    transition: ease-in-out 0.3s;
+  }
+  .Header_Navbar {
+    justify-content: flex-end;
+  }
+  .Header_Navbar_Home, .Header_Navbar_About, .Header_Navbar_Projects {
+    display: none;
+  }
+  .Header_Navbar_Menu {
+    display: flex;
+    color: #ffffff;
+    visibility: visible;
+  }
+  .Header_NavbarRD.show {
+    opacity: 1;
+    left: 0;
+  }
+  .Header_NavbarRD {
+    position: absolute;
+    left: -100%;
+    width: 100vw;
+    height: 100vh;
+    background-color: #FFFFFF;
+    transition: all 0.3s linear;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px;
+    top: 0;
+    opacity: 0;
+  }
+  .Header_NavbarRD_Close {
+    position: absolute;
+    right: 5%;
+    top: 2%;
+  }
+  .Header_NavbarRD_Logo {
+    padding: 0 2px 20px;
+    margin: 0;
+  }
+  .Header_NavbarRD_Logo a img {
+    width: 30px;
+    border-radius: 50%;
+  }
+  .Header_NavbarRD_Home, .Header_NavbarRD_About, .Header_NavbarRD_Projects {
+    padding: 20px 2px;
+    color: #000000;
+  }
+  .Header_NavbarRD_Home a, .Header_NavbarRD_About a, .Header_NavbarRD_Projects a {
+    text-decoration: none;
+    color: #000000;
+  }
+  .Header_NavbarRD_Home a:hover, .Header_NavbarRD_About a:hover, .Header_NavbarRD_Projects a:hover {
+    color: #000000;
+  }
 }
 
 /*# sourceMappingURL=Header.css.map */
