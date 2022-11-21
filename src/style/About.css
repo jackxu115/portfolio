@@ -47,10 +47,10 @@
     margin-top: 30px;
   }
   .About_Section_Intro {
-    width: 340px;
+    max-width: 340px;
   }
   .About_Section_MySkills {
-    width: 340px;
+    max-width: 340px;
   }
 }
 
