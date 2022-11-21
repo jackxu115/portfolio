@@ -21,7 +21,7 @@ export const About = () => {
                 </div>
                 <div className="About_Section_MySkills">
                     <h3>My <span>Skills</span></h3>
-                    {window.innerWidth <= 390 ? <SkillsRD/> : <Skills/>}
+                    {window.innerWidth <= 480 ? <SkillsRD/> : <Skills/>}
                 </div>
             </section>
             <Background/>

@@ -44,7 +44,7 @@
   animation: slideTitle 4s linear, textclip 6s linear infinite;
 }
 
-@media only screen and (max-width: 390px) {
+@media only screen and (max-width: 480px) {
   .Home {
     height: 850px;
   }

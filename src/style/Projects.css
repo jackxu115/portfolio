@@ -35,7 +35,7 @@
   align-items: center;
 }
 
-@media only screen and (max-width: 390px) {
+@media only screen and (max-width: 480px) {
   .Projects_Section h3 {
     font-size: 65px;
   }

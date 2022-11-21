@@ -92,7 +92,7 @@
   color: #ffffff;
 }
 
-@media only screen and (max-width: 390px) {
+@media only screen and (max-width: 480px) {
   .Header_Logo {
     margin: 0;
     width: 50%;

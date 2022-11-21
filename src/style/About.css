@@ -25,13 +25,13 @@
   margin-top: 60px;
 }
 .About_Section_Intro {
-  width: 450px;
+  max-width: 450px;
 }
 .About_Section_MySkills {
-  width: 450px;
+  max-width: 450px;
 }
 
-@media only screen and (max-width: 390px) {
+@media only screen and (max-width: 480px) {
   .About {
     height: 1200px;
   }
