@@ -4,7 +4,7 @@
   justify-content: flex-start;
   align-items: center;
   padding: 10px;
-  background-color: #ffffff;
+  background-color: #16164b;
   position: fixed;
   width: 100vw;
   z-index: 2;
@@ -17,6 +17,12 @@
 .Header_Logo img {
   width: 50px;
   border-radius: 50%;
+  transition: ease-in-out 0.3s;
+}
+.Header_Logo img:hover {
+  transform: scale(1.5);
+  cursor: pointer;
+  transition: ease-in-out 0.3s;
 }
 .Header_Navbar {
   display: flex;
@@ -26,17 +32,54 @@
   width: 50%;
 }
 .Header_Navbar_Home, .Header_Navbar_About, .Header_Navbar_Skills, .Header_Navbar_Projects {
-  padding: 2px;
+  position: relative;
+  padding: 5px;
+}
+.Header_Navbar_Home:before, .Header_Navbar_About:before, .Header_Navbar_Skills:before, .Header_Navbar_Projects:before {
+  transition: all 0.4s;
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 50%;
+  left: 50%;
+  margin-left: -50%;
+  top: 25%;
+  border-color: rgba(22, 22, 75, 0);
+  border-style: solid;
+  border-width: 0 1px;
+  z-index: -1;
+}
+.Header_Navbar_Home:after, .Header_Navbar_About:after, .Header_Navbar_Skills:after, .Header_Navbar_Projects:after {
+  transition: all 0.4s;
+  position: absolute;
+  content: "";
+  width: 50%;
+  height: 100%;
+  left: 50%;
+  margin-left: -25%;
+  top: 0;
+  border-color: rgba(22, 22, 75, 0);
+  border-style: solid;
+  border-width: 1px 0;
+  z-index: -1;
 }
 .Header_Navbar_Home:hover, .Header_Navbar_About:hover, .Header_Navbar_Skills:hover, .Header_Navbar_Projects:hover {
   cursor: pointer;
-  background-color: #03e8f4;
-  border-radius: 5px;
-  box-shadow: 0 0 5px #03e8f4, 0 0 25px #03e8f4, 0 0 50px #03e8f4, 0 0 200px #03e8f4;
+  padding: 5px;
+}
+.Header_Navbar_Home:hover:before, .Header_Navbar_About:hover:before, .Header_Navbar_Skills:hover:before, .Header_Navbar_Projects:hover:before {
+  top: 0%;
+  border-color: rgb(255, 255, 255);
+  height: 100%;
+}
+.Header_Navbar_Home:hover:after, .Header_Navbar_About:hover:after, .Header_Navbar_Skills:hover:after, .Header_Navbar_Projects:hover:after {
+  margin-left: -50%;
+  border-color: rgb(255, 255, 255);
+  width: 100%;
 }
 .Header_Navbar_Home a, .Header_Navbar_About a, .Header_Navbar_Skills a, .Header_Navbar_Projects a {
   text-decoration: none;
-  color: #000000;
+  color: #ffffff;
 }
 .Header_Navbar_Home a:hover, .Header_Navbar_About a:hover, .Header_Navbar_Skills a:hover, .Header_Navbar_Projects a:hover {
   color: #ffffff;

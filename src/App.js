@@ -11,7 +11,7 @@ import {Contact} from "./component/Contact";
 export const App = () => {
     return (
         <div className="App">
-            <Background/>
+            {/*<Background/>*/}
             <Header/>
             <Contact/>
             <Home/>

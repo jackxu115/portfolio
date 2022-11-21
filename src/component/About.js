@@ -8,12 +8,11 @@ export const About = () => {
             <section id="about" className="About_Section">
                 <div className="About_Section_Intro">
                     <h3>About <span>Me</span></h3>
-                    <p>My name is Jack Xu and I am graduated from BCIT,
+                    <p>My name is Jack Xu. I graduated from BCIT,
                         majoring in Computing Systems Technology.
                         I have a passion for all things technology.
                     </p>
-                    <p>In addition to my love of technology. I am also
-                        interested in sport, game, and movie.
+                    <p>I am also interested in sport, game, and movie.
                     </p>
                     <p>Below are projects I have developed over my
                         five years of coding experience.

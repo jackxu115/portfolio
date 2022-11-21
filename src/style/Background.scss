@@ -7,7 +7,7 @@ $max-size: .75vmin;
 $perspective: 100vmin;
 $origin: ( 0vw, 0vh, 0vmin );
 $rotation: ( 1, 1, 1 );
-$time: 10s;
+$time: 20s;
 
 $color-background: #ffffff;
 
@@ -114,7 +114,7 @@ $colors: (
 .control
 {
   transform: scale3d( 0, 0, 0 );
-  animation: appear $time linear forwards;
+  animation: appear 10s linear forwards;
 }
 
 .galaxy

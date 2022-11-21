@@ -2,8 +2,8 @@
   display: flex;
   flex-direction: column;
   width: 50px;
-  height: 200px;
-  background-color: #ffffff;
+  height: 250px;
+  background-color: #16164b;
   position: fixed;
   justify-content: center;
   align-items: center;
@@ -18,7 +18,7 @@
   transition: ease-in-out 0.3s;
 }
 .Contact_Icon:hover {
-  transform: scale(1.2);
+  transform: scale(1.5);
   transition: ease-in-out 0.3s;
 }
 

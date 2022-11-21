@@ -4,7 +4,7 @@
   justify-content: flex-start;
   align-items: center;
   padding: 10px;
-  background-color: #ffffff;
+  background-color: #16164b;
   position: fixed;
   width: 100vw;
   z-index: 2;
@@ -17,6 +17,13 @@
     img {
       width: 50px;
       border-radius: 50%;
+      transition: ease-in-out 0.3s;
+
+      &:hover {
+        transform: scale(1.5);
+        cursor: pointer;
+        transition: ease-in-out 0.3s;
+      }
     }
   }
 
@@ -28,17 +35,60 @@
     width: 50%;
 
     &_Home, &_About, &_Skills, &_Projects {
-      padding: 2px;
+      position: relative;
+      padding: 5px;
+
+      &:before {
+        transition: all 0.4s;
+        position:absolute;
+        content:"";
+        width:100%;
+        height:50%;
+        left:50%;
+        margin-left:-50%;
+        top:25%;
+        border-color:rgba(22,22,75,0);
+        border-style:solid;
+        border-width:0 1px;
+        z-index: -1;
+      }
+
+      &:after {
+        transition: all 0.4s;
+        position:absolute;
+        content:"";
+        width:50%;
+        height:100%;
+        left:50%;
+        margin-left:-25%;
+        top:0;
+        border-color:rgba(22,22,75,0);
+        border-style:solid;
+        border-width:1px 0;
+        z-index: -1;
+      }
+
       &:hover {
         cursor: pointer;
-        background-color: #03e8f4;
-        border-radius: 5px;
+        padding: 5px;
+        &:before {
+          top:0%;
+          border-color:rgba(255,255,255,1);
+          height: 100%;
 
-        box-shadow: 0 0 5px #03e8f4, 0 0 25px #03e8f4, 0 0 50px #03e8f4, 0 0 200px #03e8f4;
+        }
+
+        &:after {
+          margin-left:-50%;
+          border-color:rgba(255,255,255,1);
+          width: 100%;
+        }
       }
+
       a {
         text-decoration: none;
-        color: #000000;
+        color: #ffffff;
+
         &:hover {
           color: #ffffff;
         }
