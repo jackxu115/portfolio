@@ -34,6 +34,8 @@
 @media only screen and (max-width: 480px) {
   .About {
     height: 1200px;
+    max-width: 480px;
+    margin: auto;
   }
   .About_Section {
     flex-direction: column;

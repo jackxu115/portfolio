@@ -53,7 +53,9 @@
 
 @media only screen and (max-width: 480px) {
   .Home {
+    max-width: 480px;
     height: 850px;
+    margin: auto;
 
     &_Name {
       font-size: 50px;

@@ -36,6 +36,10 @@
 }
 
 @media only screen and (max-width: 480px) {
+  .Projects {
+    max-width: 480px;
+    margin: auto;
+  }
   .Projects_Section h3 {
     font-size: 65px;
   }

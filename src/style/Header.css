@@ -93,6 +93,9 @@
 }
 
 @media only screen and (max-width: 480px) {
+  .Header {
+    max-width: 480px;
+  }
   .Header_Logo {
     margin: 0;
     width: 50%;
